@@ -73,3 +73,5 @@ from django.contrib.staticfiles.handlers import StaticFilesHandler
 application = StaticFilesHandler(get_wsgi_application())
 
 ```
+Tekin hostlarga joylay olmayapman. 
+Muamolar bor ularni topib qayta joylayman.
