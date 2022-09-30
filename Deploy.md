@@ -75,3 +75,4 @@ application = StaticFilesHandler(get_wsgi_application())
 ```
 Tekin hostlarga joylay olmayapman. 
 Muamolar bor ularni topib qayta joylayman.
+Xato chiqishi muamo, qayerdaligini topolmaslligng yana bir muamo, topib to'g'irlay olmasliging bu alam qilarli muamo!
