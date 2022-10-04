@@ -89,16 +89,3 @@ class UniversitetDetailView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAdminUser]
     queryset = Universitet.objects.all()
     serializer_class = serializers.UniversitetSerializer
-
-
-class DashboardView(APIView):
-    permission_classes = [IsAdminUser]
-
-    @staticmethod
-    def get(request, *args, **kwargs):
-        dashboard_money_serializer = serializers.DashboardMoneySerializer()
-        dashboard_graph_serializer = serializers.DashboardGraphSerializer()
-        return Response(data={
-            'money_stats': dashboard_money_serializer.data,
-            'graph_stats': dashboard_graph_serializer.data
-        })
