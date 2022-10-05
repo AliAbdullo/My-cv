@@ -75,17 +75,3 @@ class HomiyshipsByHomiyView(generics.ListAPIView):
         Homiy = get_object_or_404(Homiy, id=self.kwargs['pk'])
         queryset = Homiy.Homiyships.all()
         return queryset
-
-
-class UniversitetView(generics.ListCreateAPIView):
-    permission_classes = [IsAdminUser]
-    queryset = Universitet.objects.all()
-    serializer_class = serializers.UniversitetSerializer
-    filter_backends = [SearchFilter]
-    search_fields = ['name']
-
-
-class UniversitetDetailView(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = [IsAdminUser]
-    queryset = Universitet.objects.all()
-    serializer_class = serializers.UniversitetSerializer
