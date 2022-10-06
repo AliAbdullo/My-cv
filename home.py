@@ -65,13 +65,3 @@ class HomiyshipsByTalabaView(generics.ListAPIView):
         Talaba = get_object_or_404(Talaba, id=self.kwargs['pk'])
         queryset = Talaba.Homiyships.all()
         return queryset
-
-
-class HomiyshipsByHomiyView(generics.ListAPIView):
-    permission_classes = [IsAdminUser]
-    serializer_class = serializers.HomiyshipsByHomiySerializer
-
-    def get_queryset(self):
-        Homiy = get_object_or_404(Homiy, id=self.kwargs['pk'])
-        queryset = Homiy.Homiyships.all()
-        return queryset
