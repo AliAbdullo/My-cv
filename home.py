@@ -55,13 +55,3 @@ class HomiyshipDetailView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAdminUser]
     queryset = Homiyship.objects.all()
     serializer_class = serializers.HomiyshipSerializer
-
-
-class HomiyshipsByTalabaView(generics.ListAPIView):
-    permission_classes = [IsAdminUser]
-    serializer_class = serializers.HomiyshipsByTalabaSerializer
-
-    def get_queryset(self):
-        Talaba = get_object_or_404(Talaba, id=self.kwargs['pk'])
-        queryset = Talaba.Homiyships.all()
-        return queryset
