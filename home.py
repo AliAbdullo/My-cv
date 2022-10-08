@@ -49,9 +49,3 @@ class HomiyshipView(generics.ListCreateAPIView):
     filter_backends = [DateRangeFilterBackend, SearchFilter, DjangoFilterBackend]
     search_fields = ['Homiy__full_name', 'Homiy__company_name', 'Talaba__full_name']
     date_range_filter_fields = ['date_created']
-
-
-class HomiyshipDetailView(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = [IsAdminUser]
-    queryset = Homiyship.objects.all()
-    serializer_class = serializers.HomiyshipSerializer
