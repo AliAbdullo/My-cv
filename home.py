@@ -40,4 +40,3 @@ class TalabaDetailView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAdminUser]
     queryset = Talaba.objects.all()
     serializer_class = serializers.TalabaSerializer
-
