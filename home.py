@@ -25,7 +25,6 @@ class HomiyDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Homiy.objects.all()
     serializer_class = serializers.HomiySerializer
 
-
 class TalabaView(generics.ListCreateAPIView):
     permission_classes = [IsAdminUser]
     queryset = Talaba.objects.all()
