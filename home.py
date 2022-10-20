@@ -36,4 +36,4 @@ class TalabaView(generics.ListCreateAPIView):
 
 class TalabaDetailView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAdminUser]
-    queryset = Talaba.objects.all()
+    
