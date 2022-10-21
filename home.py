@@ -35,5 +35,5 @@ class TalabaView(generics.ListCreateAPIView):
     date_range_filter_fields = ['date_created']
 
 class TalabaDetailView(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = 
+    
     
