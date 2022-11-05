@@ -33,5 +33,3 @@ class TalabaView(generics.ListCreateAPIView):
     search_fields = ['full_name']
     filterset_fields = ['degree', 'universitet']
     date_range_filter_fields = ['date_created']
-
-class TalabaDetailView
