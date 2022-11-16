@@ -7,8 +7,6 @@
 #from rest_framework import generics
 #from .permissions import IsAdminOrCreateOnly
 #from .filters import DateRangeFilterBackend
-#from . import serializers
-#from .models import *
 
 #class HomiyView(generics.ListCreateAPIView):
     #permission_classes = [IsAdminOrCreateOnly]
@@ -39,11 +37,30 @@
 
 #print(2+4*2)
 ism = "Abdulloh"
-print(ism)
-ism = "Muhammad"
-print(ism)
+#print(ism)
+#ism = "Muhammad"
+#print(ism)
 
-a = 6 
-b = 7 
-c = (a+b)**2
-print(c)
+#a = 6 
+#b = 7 
+#c = (a+b)**2
+#print(c)
+
+#shaxar = "Qoqon"
+#viloyat = "Farg'ona 😂"
+#print(viloyat +' '+ shaxar)
+
+#sharif  = "Ali"
+#ism_sharif = f"{ism} {sharif}"
+#print(f"Mening ismim {sharif} {ism} bo'ladi!")
+
+#print('Hello \tworld!')
+#print("Hello \nworld")
+#ism = "hali"
+#sharif = "vali"
+#ism_sharif = f"{ism} {sharif}"
+#ism_sharif = ism_sharif.upper()
+#print(ism_sharif)
+#print(ism_sharif.lower())
+#print(ism_sharif.title())
+#print(ism_sharif.capitalize()) 
