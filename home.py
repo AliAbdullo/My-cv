@@ -23,14 +23,6 @@
     #queryset = Homiy.objects.all()
     #serializer_class = serializers.HomiySerializer
 
-#class TalabaView(generics.ListCreateAPIView):
-    #permission_classes = [IsAdminUser]
-    #3queryset = Talaba.objects.all()
-   # serializer_class = serializers.TalabaSerializer
-    #filter_backends = [DateRangeFilterBackend, SearchFilter, DjangoFilterBackend]
-   # search_fields = ['full_name']
-    #filterset_fields = ['degree', 'universitet']
-    #date_range_filter_fields = ['date_created']
 # Print funksiyasi
 # Mualif Men
 # Quydagi kod Hello so'zini konsolga chiqaradi.
