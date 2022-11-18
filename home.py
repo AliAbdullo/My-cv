@@ -18,11 +18,6 @@
     #date_range_filter_fields = ['date_created']
 
 
-#class HomiyDetailView(generics.RetrieveUpdateDestroyAPIView):
-    #permission_classes = [IsAdminUser]
-    #queryset = Homiy.objects.all()
-    #serializer_class = serializers.HomiySerializer
-
 # Print funksiyasi
 # Mualif Men
 # Quydagi kod Hello so'zini konsolga chiqaradi.
