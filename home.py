@@ -8,16 +8,6 @@
 #from .permissions import IsAdminOrCreateOnly
 #from .filters import DateRangeFilterBackend
 
-#class HomiyView(generics.ListCreateAPIView):
-    #permission_classes = [IsAdminOrCreateOnly]
-    #queryset = Homiy.objects.all()
-    #serializer_class = serializers.HomiySerializer
-    #filter_backends = [DateRangeFilterBackend, SearchFilter, DjangoFilterBackend]
-    #search_fields = ['full_name', 'company_name']
-    #filterset_fields = ['money', 'status']
-    #date_range_filter_fields = ['date_created']
-
-
 # Print funksiyasi
 # Mualif Men
 # Quydagi kod Hello so'zini konsolga chiqaradi.
