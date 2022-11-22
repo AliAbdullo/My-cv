@@ -1,4 +1,3 @@
-
 # Print funksiyasi
 # Mualif Men
 # Quydagi kod Hello so'zini konsolga chiqaradi.
